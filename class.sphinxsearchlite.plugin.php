@@ -371,9 +371,11 @@ class SphinxSearchLitePlugin extends Gdn_Plugin implements SplSubject {
                         //manual install requires no polling...simply check if files exist and if sphinx.conf has info we need and move one
                         SaveToConfig('Plugin.SphinxSearchLite.Config', TRUE); //next step
                         $Sender->SetData('NextAction', 'Config'); //next step
+                        SaveToConfig('Plugin.SphinxSearchLite.ConfText','Paste Your Text Here'); // Overwrite back to default - Don't leave db info exposed in config file!
                         $Sender->StatusMessage = T("Your changes have been saved.");
                     } else {
                         //return FALSE;
+                       SaveToConfig('Plugin.SphinxSearchLite.ConfText','Paste Your Text Here'); // Overwrite back to default - Don't leave db info exposed in config file!
                     }
                     break;
                 case 'Config':
