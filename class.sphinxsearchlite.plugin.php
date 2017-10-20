@@ -18,8 +18,8 @@ $PluginInfo['SphinxSearchLite'] = array(
     'SettingsUrl' => '/plugin/sphinxsearchlite',
     'SettingsPermission' => 'Garden.AdminUser.Only',
     'Author' => "mcuhq",
-    'AuthorEmail' => 'kapotchy@gmail.com',
-    'AuthorUrl' => 'http://mcuhq.com/forums'
+    'AuthorEmail' => 'contact@mcuhq.com',
+    'AuthorUrl' => 'http://mcuhq.com'
 );
 
 class SphinxSearchLitePlugin extends Gdn_Plugin implements SplSubject {
